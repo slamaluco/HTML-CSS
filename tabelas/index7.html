@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio de tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        td , th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        caption{
+            padding: 8px;
+            font-size: 1.3em;
+            font-weight: bolder;
+        }
+        col.cnome{
+            background-color: chartreuse;
+        }
+        col.csexo{
+            background-color: red;
+        }
+        div#contiener{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabela</h1>
+    
+    <div id="contiener">
+        <table>
+            <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cnome">
+            <col class="csexo">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Profissão</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana Maria</td>
+                    <td>F</td>
+                    <td>18</td>
+                    <td>Jornalista</td>
+                </tr>
+                <tr>
+                    <td>Claudio</td>
+                    <td>M</td>
+                    <td>28</td>
+                    <td>programador</td>
+                </tr>
+                <tr>
+                    <td>Gustavo</td>
+                    <td>M</td>
+                    <td>42</td>
+                    <td>Professor</td>
+                </tr>
+                <tr>
+                    <td>Helio</td>
+                    <td>M</td>
+                    <td>19</td>
+                    <td>Vendedor</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>F</td>
+                    <td>39</td>
+                    <td>Medica</td>
+                </tr>
+                <tr>
+                    <td>Otavio</td>
+                    <td>M</td>
+                    <td>22</td>
+                    <td>Nutricionista</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum architecto ullam harum rem animi! 
+        A iste at deleniti
+         eos corrupti praesentium, explicabo voluptas doloribus saepe tempore aspernatur vero corporis! Odio?</h1>
+</body>
+</html>
