@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de forms</title>
+</head>
+<body>
+    <h1>dados pessoais</h1>
+    <form action="form003.html" method="get" autocomplete="on">
+        <fieldset>
+            <legend>dados pessoias</legend>
+            <label for="endereço" name="endereço" id="iendereço">endereço:</label>
+            <input type="text" name="dados" id="idados">
+            <br>
+            <br><label for="telefone">Telefone:</label>
+            <input type="tel" name="tel" id="itel" autocomplete="tel" 
+            pattern="^[0-9]{4,5}-[0-9]{4}$" placeholder="(xx)" required >
+            <br>
+            <br><label for="email" name="email" id="iemail">Email:</label>
+            <input type="email" name="email" id="iemail" autocomplete="email">
+            <br>
+            <br><label for=""></label>
+        </fieldset>
+        <fieldset>
+            <legend>SEXO</legend>
+            <label for="imasculino">Masculino:</label>
+            <input type="radio" name="SEXO" id="imasculino">
+            <br><label for="ifeminino">Feminino:</label>
+            <input type="radio" name="SEXO" id="ifeminino" checked>
+        </fieldset>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+
+</body>
+</html>
