@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de nacionalidade</title>
+    <style>
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Desafio 1</h1>
+    digite o pais que você nasceu <input type="text" 
+    name="text" id="text">
+    <input type="button" value="pesquisar" autocomplete="on"
+     onclick="pesquisar()">
+    <div id="res">Você é :</div>
+    <script>
+        function pesquisar(){
+            var text = document.querySelector('input#text')
+            text.innerHTML += `<p>Seu pais de nascença é ${text}</p>`
+        }
+        if (text != Brasil){
+            text.innerHTML += `Você e Brasileiro`
+        }
+        else{
+            text.innerHTML += 'Você e estrangueiro'
+        }
+    </script>
+</body>
+</html>
