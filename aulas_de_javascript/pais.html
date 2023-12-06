@@ -14,21 +14,22 @@
 </head>
 <body>
     <h1>Desafio 1</h1>
-    digite o pais que você nasceu <input type="text" 
-    name="text" id="text">
-    <input type="button" value="pesquisar" autocomplete="on"
-     onclick="pesquisar()">
-    <div id="res">Você é :</div>
+    <p>digite o pais que você nasceu <input type="text" 
+    name="pais" id="pais" autocomplete="country-name">
+    <input type="button" value="pesquisar" onclick="pesquisar()"></p>
+    <div id="res"></div>
     <script>
         function pesquisar(){
-            var text = document.querySelector('input#text')
-            text.innerHTML += `<p>Seu pais de nascença é ${text}</p>`
-        }
-        if (text != Brasil){
-            text.innerHTML += `Você e Brasileiro`
-        }
-        else{
-            text.innerHTML += 'Você e estrangueiro'
+            var pais = document.getElementById('pais')
+            var res = document.getElementById('res')
+            
+            if(pais.value=='brasil'){
+                res.innerHTML += 'Você é Brasileiro <br>'
+            }
+            else{
+                res.innerHTML += 'Você é Estrangeiro <br>'
+            }
+            
         }
     </script>
 </body>
