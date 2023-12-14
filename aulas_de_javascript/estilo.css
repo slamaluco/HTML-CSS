@@ -13,9 +13,20 @@ section{
     background-color: white;
     border-radius: 15px;
     padding: 20px;
-    width: 500px;
+    width: 600px;
     margin: auto;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.473);
+}
+div{
+    padding: 8px ;
+    text-align: center;
+}
+img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: block;
 }
 footer{
     text-align: center;
