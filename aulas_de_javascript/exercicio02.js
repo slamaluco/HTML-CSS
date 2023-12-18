@@ -23,7 +23,7 @@ function verificar() {
             }
             else if(idade > 20){
                 //adulto
-                img.setAttribute('src','homem-adulto.jpg')
+                img.setAttribute('src','jovem-adulto-homem.jpg')
             }
             else if (idade < 60 ){
                 //adulto 
@@ -48,7 +48,7 @@ function verificar() {
                 //adulto
                 img.setAttribute('src','foto-jovem-adulta-m.jpg')
             }
-            else if (idade < 60 ){
+            else if (idade > 60 ){
                 //adulto 
                 img.setAttribute('src','mulher-meia-idade.jpg')
             }
