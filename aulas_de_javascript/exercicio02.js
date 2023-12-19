@@ -21,11 +21,11 @@ function verificar() {
                 //jovem 
                 img.setAttribute('src','foto-jovem-h.jpg')
             }
-            else if(idade > 20){
+            else if(idade <= 30){
                 //adulto
                 img.setAttribute('src','jovem-adulto-homem.jpg')
             }
-            else if (idade < 49 ){
+            else if(idade <= 64 ){
                 //adulto 
                 img.setAttribute('src','homem-adulto.jpg')
             }
@@ -44,11 +44,11 @@ function verificar() {
                 //jovem 
                 img.setAttribute('src','foto-jovem-m.jpg')
             }
-            else if(idade > 20){
+            else if(idade <= 30){
                 //adulto
                 img.setAttribute('src','foto-jovem-adulta-m.jpg')
             }
-            else if (idade < 51 ){
+            else if (idade <= 51 ){
                 //adulto 
                 img.setAttribute('src','mulher-meia-idade.jpg')
             }
