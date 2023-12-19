@@ -25,7 +25,7 @@ function verificar() {
                 //adulto
                 img.setAttribute('src','jovem-adulto-homem.jpg')
             }
-            else if (idade < 60 ){
+            else if (idade < 49 ){
                 //adulto 
                 img.setAttribute('src','homem-adulto.jpg')
             }
@@ -48,7 +48,7 @@ function verificar() {
                 //adulto
                 img.setAttribute('src','foto-jovem-adulta-m.jpg')
             }
-            else if (idade > 60 ){
+            else if (idade < 51 ){
                 //adulto 
                 img.setAttribute('src','mulher-meia-idade.jpg')
             }
@@ -57,7 +57,7 @@ function verificar() {
                 img.setAttribute('src','idosa-mulher-f.jpg')
             }
         }
-        res.innerHTML=`Detectamos ${genero} com ${idade}`
+        res.innerHTML=`Detectamos ${genero} com ${idade} anos`
         res.appendChild(img)
     }
 }
