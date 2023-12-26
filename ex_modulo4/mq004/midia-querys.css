@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url(imagem/back-print.jpg);
+    }
+    main{
+        border: 2px 2px 2px black;
+    }
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+    main::after{
+        content: 'Essa impressão foi feita atraves do repositorio no github https://github.com/Igor-monteiro-barreto/HTML-CSS';
+        text-decoration: overline;
+    }
+    img#fone{display: none;}
+    img#tablet{display: none;}
+    img#impressora{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: url(imagem/back-tablet.jpg);
+    }
+    img#fone{display: none;}
+    img#tablet{display: block;}
+    img#impressora{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+@media screen and (min-width:993px) and (max-width:1199px) {
+    body{
+        background-image: url(imagem/back-pc.jpg);
+    }
+    img#fone{display: none;}
+    img#tablet{display: none;}
+    img#impressora{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-Width: 1200px) {
+    body{
+        background-image: url(imagem/back-tv.jpg);
+    }
+    main{
+        width: 650px;
+    }
+    img#fone{display: none;}
+    img#tablet{display: none;}
+    img#impressora{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+}
