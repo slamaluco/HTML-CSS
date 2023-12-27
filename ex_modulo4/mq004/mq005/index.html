@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 005</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="midia-querys.css">
 </head>
-<body>
+<body onresize="mudoutamnho()">
     <header>
         <h1>Meu site</h1>
         <span id="burger" class="material-symbols-outlined" onclick="aparecermenu()">menu</span>
@@ -71,10 +72,6 @@
                     numquam adipisci id reprehenderit quam necessitatibus dicta sit aut sint,
                      nihil fugit.
                 </p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde officiis illo
-                quod perspiciatis sequi dolores ut nesciunt. Consequatur ea nihil, sequi 
-                repellat, est eveniet mollitia voluptate quae excepturi exercitationem inventore?
-            </p>
         </article>
     </main>
     <script>
@@ -84,6 +81,14 @@
             }
             else{
                 itens.style.display = 'block'
+            }
+        }
+        function mudoutamnho(){
+            if(window.innerWidth >= 741 ){
+                itens.style.display = 'block'
+            }
+            else{
+                itens.style.display = 'none'
             }
         }
     </script>
