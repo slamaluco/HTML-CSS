@@ -17,6 +17,10 @@ section{
     margin: auto;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.473);
 }
+select#lista{
+    width: 150px;
+    
+}
 div{
     padding: 8px ;
     text-align: center;
